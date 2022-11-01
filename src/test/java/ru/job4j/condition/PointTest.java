@@ -1,9 +1,7 @@
 package ru.job4j.condition;
 
-import org.junit.Test;
 import org.junit.Assert;
-
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class PointTest {
 
@@ -18,8 +16,9 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
     public void when73to25then5() {
-        double expected = 5;
+        double expected = 5.38;
         int x1 = 7;
         int y1 = 3;
         int x2 = 2;
@@ -28,8 +27,9 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
     public void when00to20then1() {
-        double expected = 1;
+        double expected = 1.41;
         int x1 = 1;
         int y1 = 1;
         int x2 = 2;
@@ -38,8 +38,9 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
     public void when77to22then7() {
-        double expected = 2;
+        double expected = 7.07;
         int x1 = 7;
         int y1 = 7;
         int x2 = 2;
