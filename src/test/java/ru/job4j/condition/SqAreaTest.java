@@ -1,9 +1,7 @@
 package ru.job4j.condition;
 
-import org.junit.Test;
 import org.junit.Assert;
-
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class SqAreaTest {
 
@@ -16,24 +14,27 @@ public class SqAreaTest {
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
     public void whenP15K5Square7() {
-        int expected = 7;
+        double expected = 7.81;
         int p = 15;
         double k = 5;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
     public void whenP20K8Square9() {
-        int expected = 9;
+        double expected = 9.87;
         int p = 20;
         double k = 8;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
     public void whenP55K15Square44() {
-        int expected = 44;
+        double expected = 44.31;
         int p = 55;
         double k = 15;
         double out = SqArea.square(p, k);
