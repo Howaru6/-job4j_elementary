@@ -1,11 +1,10 @@
 package ru.job4j.condition;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class DivideBySixTest {
-
     @Test
     public void whenNumberDivideBy6() {
         int in = 24;
