@@ -1,11 +1,10 @@
 package ru.job4j.loop;
 
 import org.junit.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.*;
 
 public class FactorialTest {
-
     @Test
     public void whenCalculateFactorialForFiveThenOneHundredTwenty() {
         int expected = 120;
