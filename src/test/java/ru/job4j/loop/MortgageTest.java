@@ -1,7 +1,7 @@
 package ru.job4j.loop;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class MortgageTest {
 
@@ -12,7 +12,7 @@ public class MortgageTest {
         double percent = 1;
         int result = Mortgage.year(amount, salary, percent);
         int expected = 1;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -22,7 +22,7 @@ public class MortgageTest {
         double percent = 50;
         int result = Mortgage.year(amount, salary, percent);
         int expected = 2;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -32,6 +32,6 @@ public class MortgageTest {
         double percent = 20;
         int result = Mortgage.year(amount, salary, percent);
         int expected = 1;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 }

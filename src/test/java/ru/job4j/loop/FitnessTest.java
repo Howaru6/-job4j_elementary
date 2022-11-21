@@ -1,7 +1,7 @@
 package ru.job4j.loop;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class FitnessTest {
         @Test
@@ -10,7 +10,7 @@ public class FitnessTest {
             int nik = 90;
             int result = Fitness.calc(ivan, nik);
             int expected = 0;
-            assertThat(result).isEqualTo(expected);
+            Assertions.assertThat(result).isEqualTo(expected);
         }
 
         @Test
@@ -19,7 +19,7 @@ public class FitnessTest {
             int nik = 95;
             int result = Fitness.calc(ivan, nik);
             int expected = 1;
-            assertThat(result).isEqualTo(expected);
+            Assertions.assertThat(result).isEqualTo(expected);
         }
 
         @Test
@@ -28,7 +28,7 @@ public class FitnessTest {
             int nik = 90;
             int result = Fitness.calc(ivan, nik);
             int expected = 2;
-            assertThat(result).isEqualTo(expected);
+            Assertions.assertThat(result).isEqualTo(expected);
         }
 
         @Test
@@ -37,6 +37,6 @@ public class FitnessTest {
             int nik = 90;
             int result = Fitness.calc(ivan, nik);
             int expected = 1;
-            assertThat(result).isEqualTo(expected);
+            Assertions.assertThat(result).isEqualTo(expected);
         }
 }

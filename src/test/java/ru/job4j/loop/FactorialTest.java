@@ -1,8 +1,7 @@
 package ru.job4j.loop;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class FactorialTest {
     @Test
@@ -10,7 +9,7 @@ public class FactorialTest {
         int expected = 120;
         int n = 5;
         int out = Factorial.calc(n);
-        assertThat(out).isEqualTo(expected);
+        Assertions.assertThat(out).isEqualTo(expected);
     }
 
     @Test
@@ -18,6 +17,6 @@ public class FactorialTest {
         int expected = 1;
         int n = 0;
         int out = Factorial.calc(n);
-        assertThat(out).isEqualTo(expected);
+        Assertions.assertThat(out).isEqualTo(expected);
     }
 }

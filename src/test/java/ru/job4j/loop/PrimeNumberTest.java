@@ -1,7 +1,7 @@
 package ru.job4j.loop;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class PrimeNumberTest {
 
@@ -10,7 +10,7 @@ public class PrimeNumberTest {
         int finish = 5;
         int result = PrimeNumber.calc(finish);
         int expected = 3;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -18,7 +18,7 @@ public class PrimeNumberTest {
         int finish = 11;
         int result = PrimeNumber.calc(finish);
         int expected = 5;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -26,6 +26,6 @@ public class PrimeNumberTest {
         int finish = 2;
         int result = PrimeNumber.calc(finish);
         int expected = 1;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 }

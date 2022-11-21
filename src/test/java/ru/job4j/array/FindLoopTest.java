@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class FindLoopTest {
     @Test
@@ -10,7 +10,7 @@ public class FindLoopTest {
         int el = 5;
         int result = FindLoop.indexOf(data, el);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -19,7 +19,7 @@ public class FindLoopTest {
         int el = 10;
         int result = FindLoop.indexOf(data, el);
         int expected = 1;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -28,6 +28,6 @@ public class FindLoopTest {
         int el = 6;
         int result = FindLoop.indexOf(data, el);
         int expected = -1;
-        assertThat(result).isEqualTo(expected);
+        Assertions.assertThat(result).isEqualTo(expected);
     }
 }
