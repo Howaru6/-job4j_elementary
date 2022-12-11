@@ -5,7 +5,6 @@ import static org.assertj.core.api.Assertions.*;
 import static ru.job4j.array.JavaNameValidator.*;
 
 class JavaNameValidatorTest {
-
     @Test
     void whenEmptyNameInvalid() {
         assertThat(isNameValid("")).isFalse();
